@@ -1,0 +1,65 @@
+#featured {
+    .container {
+        margin-top: 3rem;
+        text-align: center;
+    }
+
+    #featuredGrid {
+        max-width: 80vw;
+        margin: 0 auto;
+        display: grid;
+        margin-top: 4rem;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    }
+
+    .filmPoster {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+        position: relative;
+
+        h3 {
+            margin-top: 1rem;
+            font-size: 2rem;
+            position: absolute;
+            max-width: 18rem;
+            line-height: 1;
+            top: 35%;
+            display: none;
+            text-align: center;
+        }
+
+        .specs {
+            display: flex;
+            gap: 1rem;
+            position: absolute;
+            top: 60%;
+            display: none;
+        }
+
+        .year,
+        .genre {
+            font-size: 1.3rem;
+        }
+
+        img {
+            transition: all .4s ease;
+            cursor: pointer;
+
+            &:hover {
+                transform: scale(1.05);
+                filter: brightness(.2);
+            }
+
+            &:hover~h3 {
+                display: block;
+            }
+
+            &:hover~.specs {
+                display: flex;
+            }
+        }
+    }
+}

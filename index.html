@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALLECine | Big movies for small prices</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div id="popupCookie">
+        <div class="popup-cookie">
+            <h2>Notice</h2>
+            <div class="popup-cookie__par">
+                <p>We and selected partners, use cookies or similar technologies as specified in the <a href="#">cookie
+                        policy</a>.</p>
+                <p>
+                    You can consent to the use of such technologies by closing this notice, by interacting with any link
+                    or
+                    button outside of this notice or by continuing to browse otherwise.</p>
+                <h4>Accept</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="social-icons">
+        <div class="social twitter">
+            <p>Twitter</p>
+            <i class="fab fa-twitter"></i>
+        </div>
+        <div class="social facebook">
+            <p>Facebook</p>
+            <i class="fab fa-facebook"></i>
+        </div>
+        <div class="social instagram">
+            <p>Instagram</p>
+            <i class="fab fa-instagram"></i>
+        </div>
+        <div class="social google">
+            <p>Google+</p>
+            <i class="fab fa-google-plus"></i>
+        </div>
+    </div>
+
+    <nav class="menu">
+        <div class="container">
+            <div class="menu__logo">
+                <h1>ALLE<span>CINE</span></h1>
+            </div>
+            <div class="menu__nav">
+                <input type="checkbox" id="toggle">
+                <label for="toggle"><i class="fas fa-bars"></i></label>
+                <ul>
+                    <li><a href="#featured">Featured</a></li>
+                    <li id="genres"><a href="#">Genres</a>
+                        <ul>
+                            <li><a href="#">Comedy</a></li>
+                            <li><a href="#">Drama</a></li>
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Romance</a></li>
+                            <li><a href="#">Fantasy</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">Sign In</a></li>
+                    <div class="search">
+                        <i class="fas fa-search"></i>
+                        <form action="">
+                            <input type="text" placeholder="Search for movie...">
+                        </form>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <div class="container">
+            <h2>Best <span>pics</span> at <span>any time </span> !</h2>
+            <p>Buy or rent any movie for cheapy prices !</p>
+            <div id="sign">
+                <h4>SIGN IN</h4><span>REGISTER</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="featured">
+        <div class="container">
+            <h2>Featured movies</h2>
+        </div>
+        <div id="featuredGrid">
+            <template id="templateFeaturedFilm">
+                <div class="filmPoster">
+
+                    <img src="" alt="">
+                    <h3>Title</h3>
+                    <div class="specs">
+                        <p class="year">2018</p>
+                        <p class="genre">Action</p>
+                    </div>
+                </div>
+            </template>
+        </div>
+
+    </div>
+
+
+
+
+    <script src="scripts/cookie.js"></script>
+    <script src="scripts/slider.js"></script>
+    <script src="scripts/featured.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+.social-icons {
+    position: fixed;
+    top: 15vh;
+
+    .social {
+        cursor: pointer;
+        width: 12rem;
+        position: absolute;
+        left: -10rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        color: #fff;
+        padding: 1rem 2rem;
+        border-top-right-radius: 5rem;
+        border-bottom-right-radius: 5rem;
+        transition: all .3s ease;
+
+        i {
+            font-size: 2.5rem;
+        }
+
+        &:hover {
+            left: 0;
+        }
+    }
+
+    .twitter {
+        background: #209AE9;
+    }
+
+    .facebook {
+        background: #405E92;
+        top: 5rem;
+    }
+
+    .instagram {
+        background: #DE4277;
+        top: 10rem;
+    }
+
+    .google {
+        background: $primary;
+        top: 15rem;
+    }
+}

@@ -1,0 +1,51 @@
+#popupCookie {
+    background: rgba($color: #000000, $alpha: .7);
+    position: fixed;
+    z-index: 1000000;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
+
+    .popup-cookie {
+        background: #fff;
+        color: $black;
+        width: 30%;
+
+
+
+        h2 {
+            background: $primary;
+            color: $white;
+            padding: 1rem 6rem;
+        }
+
+        .popup-cookie__par {
+            padding: 5rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        p {
+            margin: 1rem 0;
+        }
+
+        a {
+            text-decoration: underline;
+        }
+
+        h4 {
+            text-align: right;
+            background: $primary;
+            display: inline-block;
+            margin-left: auto;
+            color: $white;
+            padding: 1rem 2rem;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;600&display=swap');
+
+$main-font: 'Baloo Tamma 2',
+sans-serif;
+$primary: rgb(206, 24, 24);
+$black: #232323;
+$white: #eee;
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: $main-font;
+    background: $black;
+    color: $white;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 110rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
