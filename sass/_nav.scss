@@ -48,6 +48,7 @@
 
         ul {
             position: fixed;
+            z-index: 10000;
             height: 100vh;
             width: 60vw;
             background: rgba($color: #000000, $alpha: .8);
