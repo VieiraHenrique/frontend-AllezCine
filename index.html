@@ -79,13 +79,13 @@
                 <label for="toggle"><i class="fas fa-bars"></i></label>
                 <ul>
                     <li><a href="#featured">Featured</a></li>
-                    <li id="genres"><a href="#">Genres</a>
+                    <li id="genres"><a href="#genres-movie">Genres</a>
                         <ul>
-                            <li><a href="#">Comedy</a></li>
-                            <li><a href="#">Drama</a></li>
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Romance</a></li>
-                            <li><a href="#">Fantasy</a></li>
+                            <li><a href="#genres-movie">Comedy</a></li>
+                            <li><a href="#genres-movie">Drama</a></li>
+                            <li><a href="#genres-movie">Action</a></li>
+                            <li><a href="#genres-movie">Romance</a></li>
+                            <li><a href="#genres-movie">Fantasy</a></li>
                         </ul>
                     </li>
                     <li><a href="#">Register</a></li>
@@ -130,11 +130,31 @@
         </div>
 
     </div>
+    <div id="genres-movie">
+        <div class="container">
+            <h2>Movies by genre</h2>
+            <div class="genres-movie__buttons">
+                <div id="comedy" class="selected" genre="35">Comedy</div>
+                <div id="drama" genre="18">Drama</div>
+                <div id="action" genre="28">Action</div>
+                <div id="romance" genre="10749">Romance</div>
+                <div id="fantasy" genre="14">Fantasy</div>
+                <div id="animation" genre="16">Animation</div>
+            </div>
+        </div>
+
+
+        <div id="genreGrid">
+
+        </div>
+
+    </div>
 
 
     <script src="scripts/cookie.js"></script>
     <script src="scripts/slider.js"></script>
     <script src="scripts/featured.js"></script>
+    <script src="scripts/genres.js"></script>
     <script src="scripts/script.js"></script>
 </body>
 
