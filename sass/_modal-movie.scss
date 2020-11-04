@@ -1,0 +1,54 @@
+#modal-movie {
+    z-index: 100000;
+    background: rgba($color: #000000, $alpha: .7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+    p {
+        margin: 1rem 0;
+    }
+
+    .modal-movie__box {
+        border-radius: 1rem;
+        background: $black;
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+        padding: 5rem;
+        position: relative;
+    }
+
+    .modal-movie__box--infos {
+        max-width: 30rem;
+    }
+
+    .actors {
+        color: #ccc;
+    }
+
+    .cta {
+        display: flex;
+        gap: 2rem;
+
+        a {
+            background: $primary;
+            padding: .5rem 2rem;
+            color: #fff;
+        }
+    }
+
+    .close {
+        font-size: 2rem;
+        position: absolute;
+        top: 2rem;
+        right: 3rem;
+        cursor: pointer;
+    }
+}
