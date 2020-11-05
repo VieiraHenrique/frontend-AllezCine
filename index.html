@@ -92,8 +92,8 @@
                             <li><a href="#genres-movie">Fantasy</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Register</a></li>
-                    <li><a href="#">Sign In</a></li>
+                    <li><a class="goForm" href="#">Register</a></li>
+                    <li><a class="goForm" href="#">Sign In</a></li>
                     <div class="search">
                         <i class="fas fa-search"></i>
                         <form action="">
@@ -110,7 +110,7 @@
             <h2>Best <span>pics</span> at <span>any time </span> !</h2>
             <p>Buy or rent any movie for cheapy prices !</p>
             <div id="sign">
-                <h4>SIGN IN</h4><span>REGISTER</span>
+                <h4 class="goForm">SIGN IN</h4><span class="goForm">REGISTER</span>
             </div>
         </div>
     </div>
@@ -225,6 +225,82 @@
         <p>All Right reserved by &copy;conceptial 2020</p>
     </div>
 
+
+    <div id="form">
+        <div class="wrapper">
+            <div class="title-text">
+                <div class="title login">
+                    Login
+                </div>
+                <div class="title signup">
+                    Signup
+                </div>
+            </div>
+            <div class="form-container">
+                <div class="slide-controls">
+                    <input type="radio" name="slide" id="login" checked>
+                    <input type="radio" name="slide" id="signup">
+                    <label for="login" class="slide login">Login</label>
+                    <label for="signup" class="slide signup">Signup</label>
+                    <div class="slider-tab"></div>
+                </div>
+                <div class="form-inner">
+                    <form action="#" class="login">
+                        <div class="field">
+                            <label>Pseudo</label>
+                            <input type="text" placeholder="Enter your identifiant" required="">
+                        </div>
+                        <div class="field">
+                            <label>Password</label>
+                            <input type="password" placeholder="Enter your password" required="">
+                        </div>
+                        <input class="form-check-input" type="checkbox">
+                        <label class="form-check-label">Remenber me</label>
+                        <div class="pass-link">
+                            <a href="#">Forgot password?</a>
+                        </div>
+                        <div class="field btn">
+                            <div class="btn-layer"></div>
+                            <input type="submit" value="Login">
+                        </div>
+                        <div class="signup-link">
+                            Not a member? <a href="">Signup now</a>
+                        </div>
+                    </form>
+                    <form action="#" class="signup">
+                        <div class="field">
+                            <label>Name</label>
+                            <input type="text" placeholder="Enter your name" required="">
+                        </div>
+                        <div class="field">
+                            <label>Email adress</label>
+                            <input type="email" placeholder="Enter your email adress" required="">
+                        </div>
+                        <div class="field">
+                            <label>Password</label>
+                            <input type="password" placeholder="Enter your password" required="">
+                        </div>
+                        <div class="field">
+                            <label>Confirm password</label>
+                            <input type="password" placeholder="Confirm your password" required="">
+                        </div>
+                        <input class="form-check-input" type="checkbox">
+                        <label class="form-check-label">I accept the general conditions</label>
+                        <div class="field btn">
+                            <div class="btn-layer"></div>
+                            <input type="submit" value="Signup">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="scripts/forms.js"></script>
 
     <script src="scripts/cookie.js"></script>
     <script src="scripts/slider.js"></script>

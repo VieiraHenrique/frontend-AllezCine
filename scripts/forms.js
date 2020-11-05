@@ -19,3 +19,14 @@ signupLink.onclick = (()=>{
   return false;
 });
    
+
+const form = document.getElementById('form');
+const goForm = document.querySelectorAll('.goForm');
+console.log(goForm)
+
+goForm.forEach((e)=>{
+  e.addEventListener('click',()=>{
+    console.log('clicked')
+    form.style.display = 'flex';
+  })
+})
