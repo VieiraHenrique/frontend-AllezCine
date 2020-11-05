@@ -7,12 +7,16 @@ function addGenreMovie(genreMovie, genre){
 
         let newItem = document.createElement('div');
         newItem.innerHTML = templateFeaturedFilm.innerHTML;
+        newItem.setAttribute('id', genreMovie[i].id)
         newItem.querySelector('h3').innerText = genreMovie[i].title;
         newItem.querySelector('.year').innerText = genreMovie[i].release_date.slice(0,4);
         newItem.querySelector('.genre').innerText = `${genre}`
         newItem.querySelector('img').setAttribute('src', `http://image.tmdb.org/t/p/w300/${genreMovie[i].poster_path}`)
         genreGrid.appendChild(newItem);
-
+        
+        newItem.addEventListener('click', ()=>{
+            openMoviePopup(newItem.getAttribute('id'),genreMovie[i]);
+        })
 
 
     }
