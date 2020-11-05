@@ -8,11 +8,14 @@
   <title>Allé Ciné</title>
 </head>
 <body>
-
-  <form>
-    <div id="form-container">
-      <div id="log-forms">
-      <h2>Login</h2>
+  
+<div class="main-div">
+  <div class="tabs">
+    <div class="tab login active"><h2>Login</h2></div>
+    <div class="tab signup"><h2>Register</h2></div>
+  <div class="form-div current" data-form="login">
+    <h2>Login</h2>
+    <form action="#">     
       <div class="form-group">
         <label>Pseudo</label>
         <input type="text" id="login-email" placeholder="Enter your identifiant" name="username" required>
@@ -23,34 +26,90 @@
       <input class="form-check-input" type="checkbox">
       <label class="form-check-label">rester connecté</label>
 
-      <p id="pass">
-        <a href="#">Vous n'arrivez pas à vous connecter ?</a>
-      </p> 
-      <input type="submit" id='submit' value='ok' >
-      <input type="submit" id='submit' value='register' >
+      <div class="forget">
+        <a href="#">Forgot password ?</a>
+      </div>
+      <div class="form-submit">
+        <input type="submit" id='submit' value='ok' >
+        <input type="submit" id='submit' value='register' >
+      </div>
     </div>
+    
+  </form>
+   <div class="form-div" data-form="register"></div>
     <h2>Register</h2>
-    <div class="form-group">
-      <label>Name</label>
-        <input type="text" id="login-email" placeholder="Enter your name" name="username" required>
+    <form action="#">
+
+      <div class="form-group">
+        <label>Name</label>
+          <input type="text" id="login-email" placeholder="Enter your name" name="username" required>
+          <div class="form-group">
+            <label>Email address</label>
+            <input type="email" id="login-email" placeholder="Enter your email adress" name="username" required> 
+          </div>
         <div class="form-group">
-          <label>Email address</label>
-          <input type="email" id="login-email" placeholder="Enter your email adress" name="username" required> 
+          <label>Password</label>
+          <input type="password" placeholder="Enter your password" name="password" required>
         </div>
+        <div class="form-group">
+          <label>Confirm password</label>
+          <input type="password" placeholder="Confirm your password" name="password" required>
+        </div>
+        <input class="form-check-input" type="checkbox">
+        <label class="form-check-label">I accept the general conditions</label>
+        <input type="submit" id='submit' value='ok' >
+        </div>
+      </div>  
+      </div> 
+    </form>
+
+  <!--
+
+    <form>
+  
+  
+      <div id="form-container">
+        <div id="log-forms">
+        <h2>Login</h2>
+        <div class="form-group">
+          <label>Pseudo</label>
+          <input type="text" id="login-email" placeholder="Enter your identifiant" name="username" required>
+        <div class="form-group">
+          <label>Password</label>
+          <input type="password" placeholder="Enter your password" name="password" required>
+        </div>
+        <input class="form-check-input" type="checkbox">
+        <label class="form-check-label">rester connecté</label>
+  
+        <p id="pass">
+          <a href="#">Vous n'arrivez pas à vous connecter ?</a>
+        </p> 
+        <input type="submit" id='submit' value='ok' >
+        <input type="submit" id='submit' value='register' >
+      </div>
+      <h2>Register</h2>
       <div class="form-group">
-        <label>Password</label>
-        <input type="password" placeholder="Enter your password" name="password" required>
-      </div>
-      <div class="form-group">
-        <label>Confirm password</label>
-        <input type="password" placeholder="Confirm your password" name="password" required>
-      </div>
-      <input class="form-check-input" type="checkbox">
-      <label class="form-check-label">I accept the general conditions</label>
-      <input type="submit" id='submit' value='ok' >
-      </div>
-    </div>   
-</form>
+        <label>Name</label>
+          <input type="text" id="login-email" placeholder="Enter your name" name="username" required>
+          <div class="form-group">
+            <label>Email address</label>
+            <input type="email" id="login-email" placeholder="Enter your email adress" name="username" required> 
+          </div>
+        <div class="form-group">
+          <label>Password</label>
+          <input type="password" placeholder="Enter your password" name="password" required>
+        </div>
+        <div class="form-group">
+          <label>Confirm password</label>
+          <input type="password" placeholder="Confirm your password" name="password" required>
+        </div>
+        <input class="form-check-input" type="checkbox">
+        <label class="form-check-label">I accept the general conditions</label>
+        <input type="submit" id='submit' value='ok' >
+        </div>
+      </div>   
+  </form>
+  -->
 
   
   <script src="./scripts/forms.js"></script>

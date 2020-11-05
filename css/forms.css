@@ -1,45 +1,85 @@
-body{
-    color: #fff;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-#form-container{
-    width:400px;
-    margin:0 auto;
-    margin-top:10%;
-    
-}
-
-#log-forms{
-    background-color: #000000;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
+html, body{
     display: flex;
+    height: 100vh;
     justify-content: center;
     align-items: center;
+    background-color: black;
+    color: #ffffff;
+}
+
+.main-div{
+    background-color: black;
+    padding: 3rem;
+    width: 700px;
+}
+
+.tabs{
     display: flex;
-    flex-direction: column;
-    
 }
 
-#form-container h2{
-    width: 38%;
-    padding-bottom: 10px;
-    background: rgb(206, 24, 24);
-    text-align: center;  
+.tab{
+    flex: 1;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background 300ms;
+    border: 1px solid rgb(206, 24, 24);
 }
 
+.tab:hover{
+    background-color: black;
+    color: rgb(206, 24, 24);
+    border: 1px solid rgb(206, 24, 24);
 
-#pass, a {
+}
+
+.tab:nth-child(1){
+    border-radius: 25px 0 0 25px;
+}
+
+.tab:nth-child(2){
+    border-radius: 0 25px 25px 0;
+}
+
+.active{
+    background-color: rgb(206, 24, 24);
+}
+
+.form-div{
+    display: none;
+}
+
+.current{
+    display: block;
+}
+
+.form-div h2{
     text-align: center;
     color: #fff;
+    padding: 1rem 0;
 }
 
-#pass :hover{
-    color: rgb(206, 24, 24);
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 input[type=text],input[type=email], input[type=password] {
     width: 100%;
@@ -48,6 +88,8 @@ input[type=text],input[type=email], input[type=password] {
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
+    border: none;
+    outline: none;
     
 }
 
@@ -64,5 +106,10 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: white;
     color: rgb(206, 24, 24);
-    border: 1px solid rgb(206, 24, 24);;
+    border: 1px solid rgb(206, 24, 24);
+}
+
+input:focus{
+    border: none;
+    outline: none;
 }
