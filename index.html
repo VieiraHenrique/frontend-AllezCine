@@ -46,27 +46,30 @@
     </div>
 
     <div id="modal-movie">
-        <div class="modal-movie__box">
-            <div class="close"><i class="far fa-times-circle"></i></div>
-            <div class="modal-movie__box--infos">
-                <h2 class="title">Bridgerton</h2>
-                <p class="year">2020</p>
-                <p class="overview">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum aliquam harum
-                    consequuntur a saepe
-                    in quam tenetur. Sed.</p>
-                <div class="cta">
-                    <a href="#">Buy for 9.90€</a>
-                    <a href="#">Rent for 1.99€</a>
+        <template id="modal-movie-template">
+            <div class="modal-movie__box">
+                <div class="close"><i class="far fa-times-circle"></i></div>
+                <div class="modal-movie__box--infos">
+                    <h2 class="title">Bridgerton</h2>
+                    <p class="year">2020</p>
+                    <p class="rating">7,82</p>
+                    <p class="overview">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum aliquam harum
+                        consequuntur a saepe
+                        in quam tenetur. Sed.</p>
+                    <div class="cta">
+                        <a href="#">Buy for 9.90€</a>
+                        <a href="#">Rent for 1.99€</a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="trailer">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/sIsKen3y-mU" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-            </div>
+                <div class="trailer">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/sIsKen3y-mU" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
 
-        </div>
+            </div>
+        </template>
     </div>
 
     <nav class="menu">
@@ -114,6 +117,10 @@
     <div id="featured">
         <div class="container">
             <h2>Featured movies</h2>
+            <div class="next">
+                <p id="featuredPrev">Previous</p>
+                <p id="featuredNext">Next</p>
+            </div>
         </div>
         <div id="featuredGrid">
             <template id="templateFeaturedFilm">
@@ -123,6 +130,7 @@
                     <h3>Title</h3>
                     <div class="specs">
                         <p class="year">2018</p>
+                        <p class="rating"></p>
                         <p class="genre">Action</p>
                     </div>
                 </div>

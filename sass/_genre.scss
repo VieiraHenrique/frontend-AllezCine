@@ -60,6 +60,11 @@
             text-align: center;
         }
 
+        .rating {
+            color: $primary;
+            font-weight: bold;
+        }
+
         .specs {
             display: flex;
             flex-direction: column;

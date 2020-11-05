@@ -3,12 +3,13 @@ const genresMoviesButtons = document.querySelectorAll('.genres-movie__buttons di
 
 
 function addGenreMovie(genreMovie, genre){
-    for (let i = 0; i<12; i++){
+    for (let i = 0; i<20; i++){
 
         let newItem = document.createElement('div');
         newItem.innerHTML = templateFeaturedFilm.innerHTML;
         newItem.setAttribute('id', genreMovie[i].id)
         newItem.querySelector('h3').innerText = genreMovie[i].title;
+        newItem.querySelector('.rating').innerText = `Rating: ${genreMovie[i].vote_average}`;
         newItem.querySelector('.year').innerText = genreMovie[i].release_date.slice(0,4);
         newItem.querySelector('.genre').innerText = `${genre}`
         newItem.querySelector('img').setAttribute('src', `http://image.tmdb.org/t/p/w300/${genreMovie[i].poster_path}`)

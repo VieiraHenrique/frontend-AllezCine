@@ -16,6 +16,14 @@
         }
     }
 
+    .next {
+        margin-top: 2rem;
+        cursor: pointer;
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+    }
+
     #featuredGrid {
         max-width: 80vw;
         margin: 0 auto;
@@ -47,6 +55,11 @@
         img {
             width: 80%;
             border-radius: .5rem;
+        }
+
+        .rating {
+            color: $primary;
+            font-weight: bold;
         }
 
         h3 {
