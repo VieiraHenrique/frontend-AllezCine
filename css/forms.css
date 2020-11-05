@@ -1,115 +1,176 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Baloo Tamma 2",sans-serif
+}
+html,body{
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  background: black;
+  color: #fff;
+  
+}
+::selection{
+  background:  rgb(206, 24, 24);
+  color: #fff;
+}
+.wrapper{
+  overflow: hidden;
+  max-width: 390px;
+  background: black;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+}
+.wrapper .title-text{
+  display: flex;
+  width: 200%;
+}
+.wrapper .title{
+  width: 50%;
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+.wrapper .slide-controls{
+  position: relative;
+  display: flex;
+  height: 50px;
+  width: 100%;
+  overflow: hidden;
+  margin: 30px 0 10px 0;
+  justify-content: space-between;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+}
+.slide-controls .slide{
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 48px;
+  cursor: pointer;
+  z-index: 1;
+  transition: all 0.6s ease;
+}
+.slide-controls .slider-tab{
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  left: 0;
+  z-index: 0;
+  border-radius: 10px;
+  background:  rgb(206, 24, 24);
+  transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+input[type="radio"]{
+  display: none;
+}
+#signup:checked ~ .slider-tab{
+  left: 50%;
+}
+#signup:checked ~ label.signup{
+  color: #fff;
+  cursor: default;
+  user-select: none;
 }
 
-html, body{
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    color: #ffffff;
-}
 
-.main-div{
-    background-color: black;
-    padding: 3rem;
-    width: 700px;
+#login:checked ~ label.login{
+  cursor: default;
+  user-select: none;
 }
-
-.tabs{
-    display: flex;
+.wrapper .form-container{
+  width: 100%;
+  overflow: hidden;
 }
-
-.tab{
-    flex: 1;
+.form-container .form-inner{
+  display: flex;
+  width: 200%;
+}
+.form-container .form-inner form{
+  width: 50%;
+  transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+.form-inner form .field{
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+}
+.form-inner form .field input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding-left: 15px;
+  border-radius: 10px;
+  border: 1px solid lightgrey;
+  border-bottom-width: 2px;
+  font-size: 17px;
+  transition: all 0.3s ease;
+  
+}
+input .form-check-input label .form-check-label {
+    position: relative;
+    padding: 50px;
+}
+.pass-link{
     text-align: center;
-    color: #ffffff;
-    cursor: pointer;
-    transition: background 300ms;
-    border: 1px solid rgb(206, 24, 24);
+}
+.form-inner form .pass-link{
+  margin-top: 5px;
+  
+}
+.form-inner form .signup-link{
+  text-align: center;
+  margin-top: 30px;
+}
+.form-inner form .pass-link a,
+.form-inner form .signup-link a{
+  color: rgb(206, 24, 24);
+  text-decoration: none;
+}
+.form-inner form .pass-link a:hover,
+.form-inner form .signup-link a:hover{
+  text-decoration: underline;
+}
+form .btn{
+  height: 50px;
+  width: 100%;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+form .btn .btn-layer{
+  height: 100%;
+  width: 300%;
+  position: absolute;
+  left: -100%;
+  background: rgb(206, 24, 24);
+  border-radius: 10px;
+  transition: all 0.3s ease;;
+}
+form .btn:hover .btn-layer{
+  left: 0;
+}
+form .btn input[type="submit"]{
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+  background: none;
+  border: none;
+  color: #fff;
+  padding-left: 0;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
 }
 
-.tab:hover{
-    background-color: black;
-    color: rgb(206, 24, 24);
-    border: 1px solid rgb(206, 24, 24);
 
-}
-
-.tab:nth-child(1){
-    border-radius: 25px 0 0 25px;
-}
-
-.tab:nth-child(2){
-    border-radius: 0 25px 25px 0;
-}
-
-.active{
-    background-color: rgb(206, 24, 24);
-}
-
-.form-div{
-    display: none;
-}
-
-.current{
-    display: block;
-}
-
-.form-div h2{
-    text-align: center;
-    color: #fff;
-    padding: 1rem 0;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-input[type=text],input[type=email], input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    border: none;
-    outline: none;
-    
-}
-
-input[type=submit] {
-    background-color: rgb(206, 24, 24);
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    text-transform: uppercase;
-}
-input[type=submit]:hover {
-    background-color: white;
-    color: rgb(206, 24, 24);
-    border: 1px solid rgb(206, 24, 24);
-}
-
-input:focus{
-    border: none;
-    outline: none;
-}
