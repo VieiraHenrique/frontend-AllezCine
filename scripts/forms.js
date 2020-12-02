@@ -19,6 +19,9 @@ signupLink.onclick = (()=>{
   return false;
 });
    
+const close = document.querySelector('.close').addEventListener('click', ()=>{
+  form.style.display = 'none';
+})
 
 const form = document.getElementById('form');
 const goForm = document.querySelectorAll('.goForm');

@@ -954,4 +954,9 @@ a {
   padding-left: 0;
   margin-left: 0;
 }
+
+#form .close {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
 /*# sourceMappingURL=style.css.map */
